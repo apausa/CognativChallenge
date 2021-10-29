@@ -6,9 +6,8 @@ import imageUrl from "../../utils/imageUrl";
 import { RenderColumn, Recipe } from "../../types/interface";
 
 const Row: React.FC<any> = ({ item }: RenderColumn) => {
-  const renderImage = (item: Recipe) => (
-    <Image source={{ uri: imageUrl(item) }} style={styles.recipeImage}/>
-  );
+  const renderImage = (item: Recipe) => 
+    <Image source={{ uri: imageUrl(item) }} style={styles.recipeImage}/>;
   return (
     <TouchableOpacity>
       <View style={styles.rowContainer}>

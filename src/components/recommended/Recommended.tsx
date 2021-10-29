@@ -9,12 +9,8 @@ import imageUrl from "../../utils/imageUrl";
 
 const Recommended: React.FC<any> = () => {
   const recommendations = useRecoilValue(renderRecommendation);
-  const renderImageBox = (item: Recipe) => (
-    <Image
-      source={{ uri: imageUrl(item) }}
-      style={styles.scrollerRecipe}
-    />
-  );
+  const renderImageBox = (item: Recipe) =>
+    <Image source={{ uri: imageUrl(item) }} style={styles.scrollerRecipe}/>
   return (
     <View style={styles.recommendedContainer}>
       <Text style={styles.header}>Recommended</Text>
