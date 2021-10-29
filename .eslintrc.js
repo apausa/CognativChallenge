@@ -8,6 +8,7 @@ module.exports = {
     sourceType: "module",
   },
   rules: {
+    "indent": ["error", 2],
     "no-multi-spaces": ["error"],
     "no-multiple-empty-lines": ["error", { max: 1 }],
     "object-curly-spacing": [
@@ -15,6 +16,7 @@ module.exports = {
       "always",
       { arraysInObjects: false, objectsInObjects: false },
     ],
+    "@typescript-eslint/no-explicit-any": "off",
     "no-use-before-define": ["off"],
     "no-console": ["error", { allow: ["warn", "error"]}],
     "@typescript-eslint/no-use-before-define": ["off"],
@@ -29,7 +31,8 @@ module.exports = {
     "react-native/no-color-literals": ["warn"],
     "react-native/no-unused-styles": ["warn"],
     "comma-dangle": ["error", "always-multiline"],
-    quotes: ["error", "double", { allowTemplateLiterals: true }],
+    "@typescript-eslint/no-unused-vars": ["off"],
+    "@typescript-eslint/explicit-module-boundary-types": ["off"],
   },
   env: {
     es6: true,
