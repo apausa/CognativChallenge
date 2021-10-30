@@ -3,14 +3,14 @@ import React from "react";
 import { Text, View, TouchableOpacity, Image } from "react-native";
 import styles from "../../screens/home/homeStyles";
 import imageUrl from "../../utils/imageUrl";
-import { RenderColumn, Recipe } from "../../types/interface";
+import { Column, Recipe } from "../../types/interface";
 
-const Row: React.FC<any> = ({ item }: RenderColumn) => {
+const Row: React.FC<any> = ({ item, navigate }: Column) => {
   const renderImage = (item: Recipe) => 
     <Image source={{ uri: imageUrl(item) }} style={styles.recipeImage}/>;
   return (
     <TouchableOpacity>
-      <View style={styles.rowContainer}>
+      <TouchableOpacity style={styles.rowContainer} onPress={() => navigate('Details')}>
         <View style={styles.imageContainer}>{renderImage(item)}</View>
         <View style={styles.infoContainer}>
           <Text style={styles.categoryRow}>{item.categoryName}</Text>
@@ -27,7 +27,7 @@ const Row: React.FC<any> = ({ item }: RenderColumn) => {
             </View>
           </View>
         </View>
-      </View>
+      </TouchableOpacity>
     </TouchableOpacity>
   )
 }

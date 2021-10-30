@@ -17,6 +17,11 @@ export interface RenderColumn {
     item: Recipe,
 }
 
+export interface Column {
+    item: Recipe,
+    navigate: any, 
+}
+
 export interface Recommended {
     recommendations: Recipe[],
 }

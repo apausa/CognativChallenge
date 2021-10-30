@@ -13,7 +13,7 @@ export default function App() {
     <RecoilRoot>
       <Suspense fallback={<Loading />}>
         <NavigationContainer>
-          <Navigator>
+          <Navigator initialRouteName="Home">
             <Screen name="Home" component={Home}/>
             <Screen name="Details" component={Details}/>
           </Navigator>
