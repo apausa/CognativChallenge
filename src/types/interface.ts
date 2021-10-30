@@ -1,4 +1,4 @@
-export interface Recipe {
+export interface RecipeInterface {
     _id: string,
     name: string,
     categoryId: string,
@@ -13,15 +13,19 @@ export interface Recipe {
     favorite?: number,
 }
 
-export interface RenderColumn {
-    item: Recipe,
+export interface RenderColumnInterface {
+    item: RecipeInterface,
 }
 
-export interface Column {
-    item: Recipe,
+export interface ColumnInterface {
+    item: RecipeInterface,
     navigation: any, 
 }
 
-export interface Recommended {
-    recommendations: Recipe[],
+export interface RecommendedInterface {
+    recommendations: RecipeInterface[],
+}
+
+export interface DetailsInterface {
+    itemId: string,
 }

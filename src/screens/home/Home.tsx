@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 import { useRecoilValue } from 'recoil';
 import {
   Text,
@@ -7,16 +7,18 @@ import {
   SafeAreaView,
   StatusBar,
 } from "react-native";
-import renderRecipe from '../../recoil/actions/recipeCreator';
-import { RenderColumn } from "../../types/interface";
+
+import renderRecipe from '../../recoil/selectors/recipeSelector';
+import { RenderColumnInterface } from "../../types/interface";
 import Recommended from "../../components/recommended/Recommended";
 import Column from "../../components/column/Column";
 import styles from "./homeStyles";
 
 const Home: React.FC<any> = ({ navigation }) => {
   const realRecipes = useRecoilValue(renderRecipe);
-  const renderRecommended = () => <Recommended/>;
-  const RenderColumn = ({ item }: RenderColumn) =>
+  const renderRecommended = () =>
+    <Recommended navigation={navigation}/>;
+  const RenderColumn = ({ item }: RenderColumnInterface) =>
     <Column item={item} navigation={navigation} />;
   return (
     <SafeAreaView style={styles.mainScreen}>

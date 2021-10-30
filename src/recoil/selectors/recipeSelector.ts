@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-
 import { selector } from 'recoil';
 import recipeService from '../../services/recipeService';
 
