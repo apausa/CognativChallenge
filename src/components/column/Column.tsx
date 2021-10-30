@@ -5,13 +5,17 @@ import styles from "../../screens/home/homeStyles";
 import imageUrl from "../../utils/imageUrl";
 import { Column, Recipe } from "../../types/interface";
 
-const Row: React.FC<any> = ({ item, navigate }: Column) => {
-  const renderImage = (item: Recipe) => 
-    <Image source={{ uri: imageUrl(item) }} style={styles.recipeImage}/>;
+const Column: React.FC<any> = ({ item, navigation }: Column) => {
+  const image = imageUrl(item);
+  const { categoryName, name, duration, complexity, people } = item;
   return (
     <TouchableOpacity>
-      <TouchableOpacity style={styles.rowContainer} onPress={() => navigate('Details')}>
-        <View style={styles.imageContainer}>{renderImage(item)}</View>
+      <TouchableOpacity 
+        style={styles.rowContainer}
+        onPress={() => navigation.push('Details', { itemId: item._id })}>
+        <View style={styles.imageContainer}>
+          <Image source={{ uri: image }} style={styles.recipeImage}/>
+        </View>
         <View style={styles.infoContainer}>
           <Text style={styles.categoryRow}>{item.categoryName}</Text>
           <Text style={styles.titleRow}>{item.name}</Text>
@@ -32,4 +36,4 @@ const Row: React.FC<any> = ({ item, navigate }: Column) => {
   )
 }
 
-export default Row;
+export default Column;

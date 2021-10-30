@@ -13,11 +13,11 @@ import Recommended from "../../components/recommended/Recommended";
 import Column from "../../components/column/Column";
 import styles from "./homeStyles";
 
-const Home: React.FC<any> = ({ navigation: { navigate }}) => {
+const Home: React.FC<any> = ({ navigation }) => {
   const realRecipes = useRecoilValue(renderRecipe);
   const renderRecommended = () => <Recommended/>;
   const RenderColumn = ({ item }: RenderColumn) =>
-    <Column item={item} navigate={navigate} />;
+    <Column item={item} navigation={navigation} />;
   return (
     <SafeAreaView style={styles.mainScreen}>
       <StatusBar barStyle="dark-content" />

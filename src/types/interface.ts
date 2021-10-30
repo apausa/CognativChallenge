@@ -19,7 +19,7 @@ export interface RenderColumn {
 
 export interface Column {
     item: Recipe,
-    navigate: any, 
+    navigation: any, 
 }
 
 export interface Recommended {
