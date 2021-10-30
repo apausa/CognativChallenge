@@ -26,16 +26,13 @@ const data = {
 };
 
 export default function Details() {
-
-  let imageUrl = "http://via.placeholder.com/640x360";
-  if (data && data.photo) imageUrl = data.photo;
   return (
     <SafeAreaView style={styles.mainScreen}>
       <StatusBar barStyle="dark-content" />
       <View style={styles.container}>
         <ScrollView showsVerticalScrollIndicator={false}>
           <View style={styles.imageContainer}>
-            <Image source={{ uri: imageUrl }} style={styles.recipeImage} />
+            <Image source={{ uri: imageUrl(data) }} style={styles.recipeImage} />
             <View style={styles.darkener} />
           </View>
           <View style={styles.infoContainer}>
