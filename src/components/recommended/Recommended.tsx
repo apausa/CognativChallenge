@@ -2,19 +2,13 @@ import React from "react";
 import { Text, View, TouchableOpacity, Image, ScrollView } from "react-native";
 import { useRecoilValue } from 'recoil';
 
-import renderRecommendation from '../../recoil/actions/recommendationCreator';
+import renderRecommendation from '../../recoil/recommendationSelector';
 import styles from "../../screens/home/homeStyles";
-import { Recipe } from "../../types/interface";
+import { RecipeInterface } from "../../types/interface";
 import imageUrl from "../../utils/imageUrl";
 
-const Recommended: React.FC<any> = () => {
+const Recommended: React.FC<any> = ({ navigation }) => {
   const recommendations = useRecoilValue(renderRecommendation);
-  const renderImageBox = (item: Recipe) => (
-    <Image
-      source={{ uri: imageUrl(item) }}
-      style={styles.scrollerRecipe}
-    />
-  );
   return (
     <View style={styles.recommendedContainer}>
       <Text style={styles.header}>Recommended</Text>
@@ -24,9 +18,11 @@ const Recommended: React.FC<any> = () => {
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={styles.scroller}
       >
-        {recommendations.map((item: Recipe) => (
-          <TouchableOpacity>
-            <View style={styles.recipeImageBox}>{renderImageBox(item)}</View>
+        {recommendations.map((item: RecipeInterface) => (
+          <TouchableOpacity onPress={() => navigation.push('Details', { itemId: item._id })}>
+            <View style={styles.recipeImageBox}>
+              <Image source={{ uri: imageUrl(item) }} style={styles.scrollerRecipe}/>
+            </View>
           </TouchableOpacity>
         ),
         )}
