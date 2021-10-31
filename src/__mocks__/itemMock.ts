@@ -1,0 +1,14 @@
+export default {
+  _id: '',
+  name: '',
+  categoryId: '',
+  categoryName: '',
+  duration: 0,
+  complexity: '',
+  people: 0,
+  ingredients: '',
+  description: '',
+  photo: '',
+  recommended: 0,
+  favorite: 0,
+};

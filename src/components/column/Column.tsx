@@ -20,6 +20,7 @@ const Column: React.FC<any> = ({ item, navigation }: ColumnInterface) => {
     <TouchableOpacity>
       <TouchableOpacity 
         style={styles.rowContainer}
+        testID="itemColumn"
         onPress={() => navigation.push('Details', { itemId: _id })}>
         <View style={styles.imageContainer}>
           <Image source={{ uri: image }} style={styles.recipeImage}/>

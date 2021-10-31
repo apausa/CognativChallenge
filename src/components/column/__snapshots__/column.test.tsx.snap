@@ -1,0 +1,198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given a Column component When renders Then matches snapshot 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={false}
+  nativeID="animatedComponent"
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    nativeID="animatedComponent"
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "backgroundColor": "#ffffff",
+        "borderRadius": 4,
+        "justifyContent": "flex-start",
+        "marginBottom": 16,
+        "marginHorizontal": 16,
+        "opacity": 1,
+        "overflow": "hidden",
+      }
+    }
+    testID="itemColumn"
+  >
+    <View
+      style={
+        Object {
+          "height": 128,
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "uri": "http://via.placeholder.com/640x360",
+          }
+        }
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "stretch",
+          "justifyContent": "center",
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#9e9e9e",
+            "fontSize": 10,
+            "fontStyle": "normal",
+            "fontWeight": "bold",
+            "letterSpacing": 1,
+            "lineHeight": 24,
+            "textAlign": "left",
+          }
+        }
+      >
+        
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontSize": 16,
+            "fontStyle": "normal",
+            "fontWeight": "500",
+            "letterSpacing": 0.5,
+            "lineHeight": 24,
+            "textAlign": "left",
+          }
+        }
+      >
+        
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "flex-start",
+              "marginRight": 8,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#bdbdbd",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "300",
+                "letterSpacing": 0.5,
+                "lineHeight": 24,
+              }
+            }
+          >
+            0
+             minutes
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "flex-start",
+              "marginRight": 8,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#bdbdbd",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "300",
+                "letterSpacing": 0.5,
+                "lineHeight": 24,
+              }
+            }
+          >
+            
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "flex-start",
+              "marginRight": 8,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#bdbdbd",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "300",
+                "letterSpacing": 0.5,
+                "lineHeight": 24,
+              }
+            }
+          >
+            0
+             people
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

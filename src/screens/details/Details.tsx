@@ -12,10 +12,11 @@ import {
 } from "react-native";
 
 import { DetailsInterface } from "../../types/interface";
-import renderDetails from '../../recoil/detailsSelector';
+import renderDetails from '../../recoil/selectors/detailsSelector';
 import imageUrl from "../../utils/imageUrl";
 
-export default function Details({ route: { params: { itemId }}}: DetailsInterface) {
+export default function Details({ route }: DetailsInterface) {
+  const { params: { itemId }} = route;
   const recipe = useRecoilValue(renderDetails(itemId));
   const image = imageUrl(recipe);
   const {

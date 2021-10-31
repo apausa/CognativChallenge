@@ -1,7 +1,7 @@
 import { selectorFamily } from 'recoil';
 
 import renderRecipe from './recipeSelector';
-import { RecipeInterface } from "../types/interface";
+import { RecipeInterface } from "../../types/interface";
 
 const renderDetails = selectorFamily({
   key: 'RENDER_DETAILS',
