@@ -20,6 +20,7 @@ const Recommended: React.FC<any> = ({ navigation }) => {
       >
         {recommendations.map((item: RecipeInterface) => (
           <TouchableOpacity
+            key={item._id}
             onPress={() => navigation.push('Details', { itemId: item._id })}
             testID='itemRecommended'>
             <View style={styles.recipeImageBox}>
