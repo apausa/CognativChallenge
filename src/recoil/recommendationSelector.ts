@@ -1,6 +1,5 @@
-
 import { selector } from 'recoil';
-import recommendationService from '../../services/recommendationService';
+import recommendationService from '../services/recommendationService';
 
 const renderRecomendation = selector({
   key: 'RENDER_RECOMENDATION',

@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View, TouchableOpacity, Image, ScrollView } from "react-native";
 import { useRecoilValue } from 'recoil';
 
-import renderRecommendation from '../../recoil/selectors/recommendationSelector';
+import renderRecommendation from '../../recoil/recommendationSelector';
 import styles from "../../screens/home/homeStyles";
 import { RecipeInterface } from "../../types/interface";
 import imageUrl from "../../utils/imageUrl";

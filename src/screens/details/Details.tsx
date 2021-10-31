@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+/* eslint-disable no-console */
+import React from "react";
 import styles from "./detailsStyles";
 import { useRecoilValue } from 'recoil';
 import {
@@ -10,14 +11,12 @@ import {
   StatusBar,
 } from "react-native";
 
-import { DetailsInterface, RecipeInterface } from "../../types/interface";
-import renderRecipe from '../../recoil/selectors/recipeSelector';
+import { DetailsInterface } from "../../types/interface";
+import renderDetails from '../../recoil/detailsSelector';
 import imageUrl from "../../utils/imageUrl";
 
-export default function Details({ itemId }: DetailsInterface) {
-  const realRecipes = useRecoilValue(renderRecipe);
-  const recipe = realRecipes.filter(
-    (item: RecipeInterface) => item._id === itemId);
+export default function Details({ route: { params: { itemId }}}: DetailsInterface) {
+  const recipe = useRecoilValue(renderDetails(itemId));
   const image = imageUrl(recipe);
   const {
     categoryName,
@@ -28,6 +27,7 @@ export default function Details({ itemId }: DetailsInterface) {
     ingredients,
     description,
   } = recipe;
+
   return (
     <SafeAreaView style={styles.mainScreen}>
       <StatusBar barStyle="dark-content" />

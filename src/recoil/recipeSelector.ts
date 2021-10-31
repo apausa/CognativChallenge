@@ -1,5 +1,5 @@
 import { selector } from 'recoil';
-import recipeService from '../../services/recipeService';
+import recipeService from '../services/recipeService';
 
 const renderRecipe = selector({
   key: 'RENDER_RECIPE',

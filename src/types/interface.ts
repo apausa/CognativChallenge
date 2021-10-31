@@ -27,5 +27,9 @@ export interface RecommendedInterface {
 }
 
 export interface DetailsInterface {
-    itemId: string,
+    route: {
+        params: {
+            itemId: string,
+        }
+    }
 }

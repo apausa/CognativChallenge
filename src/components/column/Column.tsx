@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React from "react";
 import { Text, View, TouchableOpacity, Image } from "react-native";
 
