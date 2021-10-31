@@ -4,6 +4,12 @@ React Native challenge for Cognativ
 
 ## About the app.
 
+### Features. 
+
+* More than 70% coverage.  
+* TypeScript. 
+* Recoil state manager.
+
 ### Run.
 
 #### Installation:
@@ -18,12 +24,6 @@ React Native challenge for Cognativ
 #### Run for Android:
 * npx react-native start
 * npx react-native run-ios
-
-### Features. 
-
-* More than 70% coverage.  
-* TypeScript. 
-* Recoil state manager.
 
 ## About the challenge.
 
