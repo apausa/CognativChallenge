@@ -1,6 +1,6 @@
 import PLACEHOLDER from "../constants/placeholder";
-import { Recipe } from "../types/interface";
+import { RecipeInterface } from "../types/interface";
 
-const imageURL = (item: Recipe) => 
+const imageURL = (item: RecipeInterface) => 
   (item.photo) ? item.photo : PLACEHOLDER;
 export default imageURL;

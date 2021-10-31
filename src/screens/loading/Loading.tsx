@@ -1,6 +1,6 @@
 import React from "react";
 import { Text } from "react-native";
 
-const Loading = () => <Text>Loading</Text>;
+const Loading: React.FC<any> = () => <Text>Loading</Text>;
 
 export default Loading;

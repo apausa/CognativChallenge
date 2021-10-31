@@ -15,7 +15,7 @@ import { DetailsInterface } from "../../types/interface";
 import renderDetails from '../../recoil/selectors/detailsSelector';
 import imageUrl from "../../utils/imageUrl";
 
-export default function Details({ route }: DetailsInterface) {
+const Details: React.FC<any> = ({ route }: DetailsInterface) => {
   const { params: { itemId }} = route;
   const recipe = useRecoilValue(renderDetails(itemId));
   const image = imageUrl(recipe);
@@ -66,3 +66,5 @@ export default function Details({ route }: DetailsInterface) {
     </SafeAreaView>
   );
 }
+
+export default Details;

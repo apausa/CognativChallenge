@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-async function recommendationService() {
+async function recommendationService(): Promise<any> {
   try {
     const { data: { data }} = await axios.get('https://virated-api.herokuapp.com/recipes?recommended=1');
     return data;

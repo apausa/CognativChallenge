@@ -7,7 +7,7 @@ import Home from "./screens/home/Home";
 import Loading from "./screens/loading/Loading";
 import Details from "./screens/details/Details";
 
-export default function App() {
+const App: React.FC<any> = () => {
   const { Screen, Navigator } = createNativeStackNavigator();
   return (
     <RecoilRoot>
@@ -22,3 +22,5 @@ export default function App() {
     </RecoilRoot>
   );
 }
+
+export default App;

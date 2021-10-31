@@ -32,7 +32,6 @@ module.exports = {
     "react-native/no-unused-styles": ["warn"],
     "comma-dangle": ["error", "always-multiline"],
     "@typescript-eslint/no-unused-vars": ["off"],
-    "@typescript-eslint/explicit-module-boundary-types": ["off"],
   },
   env: {
     es6: true,
