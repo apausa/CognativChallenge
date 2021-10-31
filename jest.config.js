@@ -1,12 +1,11 @@
 module.exports = {
   collectCoverageFrom: [
-    '!**/node_modules/**',
     '!**/coverage/**',
     '!**/*.config.js/**',
     "!**/.*.js/**",
   ],
   transformIgnorePatterns: [
-    '/node_modules/',
+    'node_modules/(?!@react-native|react-native)',
   ],
   preset: "react-native",
   moduleFileExtensions: ["ts", "tsx", "js", "jsx"],
