@@ -2,14 +2,30 @@
 
 React Native challenge for Cognativ
 
-## Run the app. 
+## About the app.
 
+### Run.
+
+Installation:
+* npm install
 * cd ios 
 * pod install
+
+Run for iOS: 
 * npx react-native start
 * npx react-native run-ios
 
-## About
+Run for Android:
+* npx react-native start
+* npx react-native run-ios
+
+### Features. 
+
+* >70% coverage.  
+* TypeScript. 
+* Recoil state manager.
+
+## About the challenge.
 
 This project is used to evaluate your approach on re-order y refactor of javascript code and your basic knowledge in React Native, take it easy.
 
