@@ -10,11 +10,11 @@ describe('Given a Column component', () => {
   beforeEach(() => { screen =
     render(<Column item={itemMock} navigation={navigationMock}/>);
   })
-  describe('When is rendered', () => {
+  describe('When renders', () => {
     test('Then matches snapshot', () => {
       expect(screen).toMatchSnapshot();
     });
-    describe('And you press an item', () => {
+    describe('And item is pressed', () => {
       test('Then calls "navigation.push()"', () => {
         const item = screen.getByTestId('itemColumn');
         fireEvent.press(item);

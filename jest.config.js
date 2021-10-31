@@ -3,6 +3,7 @@ module.exports = {
     '!**/coverage/**',
     '!**/*.config.js/**',
     "!**/.*.js/**",
+    '!**/__snapshots__/**',
   ],
   transformIgnorePatterns: [
     'node_modules/(?!@react-native|react-native)',

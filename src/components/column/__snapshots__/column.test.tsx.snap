@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Given a Column component When is rendered Then matches snapshot 1`] = `
+exports[`Given a Column component When renders Then matches snapshot 1`] = `
 <View
   accessible={true}
   collapsable={false}

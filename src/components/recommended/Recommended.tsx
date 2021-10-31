@@ -19,7 +19,9 @@ const Recommended: React.FC<any> = ({ navigation }) => {
         contentContainerStyle={styles.scroller}
       >
         {recommendations.map((item: RecipeInterface) => (
-          <TouchableOpacity onPress={() => navigation.push('Details', { itemId: item._id })}>
+          <TouchableOpacity
+            onPress={() => navigation.push('Details', { itemId: item._id })}
+            testID='itemRecommended'>
             <View style={styles.recipeImageBox}>
               <Image source={{ uri: imageUrl(item) }} style={styles.scrollerRecipe}/>
             </View>
