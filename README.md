@@ -25,6 +25,9 @@ React Native challenge for Cognativ
 * npx react-native start
 * npx react-native run-ios
 
+#### Run the tests:
+* yarn test --updateSnapshot
+
 ## About the challenge.
 
 This project is used to evaluate your approach on re-order y refactor of javascript code and your basic knowledge in React Native, take it easy.
