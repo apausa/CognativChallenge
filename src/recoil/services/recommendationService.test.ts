@@ -1,6 +1,6 @@
 import axios from 'axios';
 import recommendationService from './recommendationService';
-import itemMock from '../mocks/itemMock';
+import itemMock from '../../mocks/itemMock';
 
 jest.mock("axios");
 

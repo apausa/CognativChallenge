@@ -1,7 +1,7 @@
 import { snapshot_UNSTABLE } from "recoil";
 import renderRecommendation from './recommendationSelector';
 
-jest.mock('../services/recommendationService.ts');
+jest.mock('../services/recommendationService');
 
 describe("Given a recommendation selector", () => {
   describe("When is invoked", () => {

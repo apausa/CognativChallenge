@@ -8,7 +8,7 @@ import {
   StatusBar,
 } from "react-native";
 
-import renderRecipe from '../../recoil/recipeSelector';
+import renderRecipe from '../../recoil/selectors/recipeSelector';
 import { RenderColumnInterface } from "../../types/interface";
 import Recommended from "../../components/recommended/Recommended";
 import Column from "../../components/column/Column";
