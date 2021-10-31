@@ -3,16 +3,16 @@ import { render } from '@testing-library/react-native';
 import { RecoilRoot } from 'recoil';
 
 import Loading from "../loading/Loading";
-import Details from './Details';
-import detailsMock from '../../mocks/detailsMock';
+import Home from './Home';
+import navigationMock from '../../mocks/navigationMock';
 
-describe('Given a Details component', () => {
+describe('Given a Home component', () => {
   describe('When renders', () => {
     test('Then matches snapshot', () => {
       const screen = render(
         <Suspense fallback={<Loading/>}>
           <RecoilRoot>
-            <Details route={detailsMock}/>
+            <Home navigation={navigationMock}/>
           </RecoilRoot>
         </Suspense>,
       )
