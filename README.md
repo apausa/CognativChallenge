@@ -9,7 +9,7 @@ React Native challenge for Cognativ
 * npx react-native start
 * npx react-native run-ios
 
-### About
+## About
 
 This project is used to evaluate your approach on re-order y refactor of javascript code and your basic knowledge in React Native, take it easy.
 
