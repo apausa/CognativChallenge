@@ -4,7 +4,7 @@ import { RecoilRoot } from 'recoil';
 
 import Loading from "../../screens/loading/Loading";
 import Recommended from './Recommended';
-import navigationMock from '../../mocks/navigationMock';
+import navigationMock from '../../__mocks__/navigationMock';
 
 describe('Given a Recommended component', () => {
   describe('When renders', () => {

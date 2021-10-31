@@ -3,9 +3,9 @@ import { RecoilRoot } from 'recoil';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import Home from "./src/screens/home/Home";
-import Loading from "./src/screens/loading/Loading";
-import Details from "./src/screens/details/Details";
+import Home from "./screens/home/Home";
+import Loading from "./screens/loading/Loading";
+import Details from "./screens/details/Details";
 
 export default function App() {
   const { Screen, Navigator } = createNativeStackNavigator();

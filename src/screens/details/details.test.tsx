@@ -4,7 +4,7 @@ import { RecoilRoot } from 'recoil';
 
 import Loading from "../loading/Loading";
 import Details from './Details';
-import detailsMock from '../../mocks/detailsMock';
+import detailsMock from '../../__mocks__/detailsMock';
 
 describe('Given a Details component', () => {
   describe('When renders', () => {

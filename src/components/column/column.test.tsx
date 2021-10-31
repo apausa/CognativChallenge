@@ -2,8 +2,8 @@ import React from 'react';
 import { render, fireEvent } from '@testing-library/react-native';
 
 import Column from './Column';
-import itemMock from '../../mocks/itemMock';
-import navigationMock from '../../mocks/navigationMock';
+import itemMock from '../../__mocks__/itemMock';
+import navigationMock from '../../__mocks__/navigationMock';
 
 describe('Given a Column component', () => {
   let screen: any;
